@@ -104,10 +104,11 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
  background-color: #B89582;
  color: #130D0A;
  font-family: Oswald, sans-serif;;
- font-size: 100%;
+ font-size: 200%;
 }
 a {
- color: #492711;
+ /*color: #492711;*/
+ color: #743c1e;
 }
 a:hover {
  color: #895B2E;
@@ -133,7 +134,7 @@ $(document.head).find('#style-ui-bar').remove();</script><tw-passagedata pid="1"
 	{
 		name: &quot;New Curtains&quot;,
 		price: random(50, 220),
-		value: 150,
+		value: 130,
 		desc: &quot;Glare-free leisure.&quot;
 	},
 	{
@@ -144,14 +145,14 @@ $(document.head).find('#style-ui-bar').remove();</script><tw-passagedata pid="1"
 	},
 	{
 		name: &quot;Wall Re-Painting&quot;,
-		price: random(700, 2000),
-		value: 2800,
+		price: random(700, 2400),
+		value: 2600,
 		desc: &quot;Modern colours.&quot;
 	},
 	{
 		name: &quot;Area Rug&quot;,
-		price: random(80, 200),
-		value: 140,
+		price: random(80, 300),
+		value: 150,
 		desc: &quot;Pet friendly.&quot;
 	},
 	{
@@ -162,7 +163,7 @@ $(document.head).find('#style-ui-bar').remove();</script><tw-passagedata pid="1"
 	},
 	{
 		name: &quot;Classic Chandelier&quot;,
-		price: random(250, 800),
+		price: random(300, 800),
 		value: 600,
 		desc: &quot;Antique bronze style.&quot;
 	},
@@ -171,6 +172,36 @@ $(document.head).find('#style-ui-bar').remove();</script><tw-passagedata pid="1"
 		price: random(30, 70),
 		value: 60,
 		desc: &quot;Minamilistic approach.&quot;
+	},
+	{
+		name: &quot;Fireplace TV Stand&quot;,
+		price: random(400, 1000),
+		value: 850,
+		desc: &quot;Fake logs not included.&quot;
+	},
+	{
+		name: &quot;75-Inch 4K Television&quot;,
+		price: random(1000, 4000),
+		value: 2500,
+		desc: &quot;Clearer than real-life.&quot;
+	},
+	{
+		name: &quot;Rocking Chair&quot;,
+		price: random(500, 1000),
+		value: 800,
+		desc: &quot;Tufted fabric.&quot;
+	},
+	{
+		name: &quot;Recliner&quot;,
+		price: random(800, 1300),
+		value: 1100,
+		desc: &quot;Canine-proof technology.&quot;
+	},
+	{
+		name: &quot;Storage Ottoman&quot;,
+		price: random(200, 600),
+		value: 500,
+		desc: &quot;Stores 1000 LEGO bricks.&quot;
 	}
 ]&gt;&gt;
 &lt;&lt;set $kitchenParts to [
@@ -181,16 +212,52 @@ $(document.head).find('#style-ui-bar').remove();</script><tw-passagedata pid="1"
 		desc: &quot;Shiny white tiles.&quot;
 	},
 	{
-		name: &quot;New Cabinets Doors&quot;,
+		name: &quot;New Cabinet Doors&quot;,
 		price: random(1000, 4000),
 		value: 3000,
 		desc: &quot;Handles sold seperately.&quot;
 	},
 	{
+		name: &quot;Tile Countertops&quot;,
+		price: random(1200, 3600),
+		value: 2300,
+		desc: &quot;Storage and counter-space.&quot;
+	},
+	{
+		name: &quot;Quartz Countertops&quot;,
+		price: random(7000, 8400),
+		value: 7800,
+		desc: &quot;Crystalline counter-space.&quot;
+	},
+	{
+		name: &quot;Calacatta Countertops&quot;,
+		price: random(18000, 21600),
+		value: 9000,
+		desc: &quot;Rare counter-space.&quot;
+	},
+	{
 		name: &quot;Kitchen Island&quot;,
-		price: random(500, 6000),
+		price: random(500, 5500),
 		value: 3800,
 		desc: &quot;Storage and counter-space.&quot;
+	},
+	{
+		name: &quot;Pantry&quot;,
+		price: random(500, 1000),
+		value: 800,
+		desc: &quot;Dedicated onion drawer.&quot;
+	},
+	{
+		name: &quot;Touchless Faucet&quot;,
+		price: random(200, 500),
+		value: 380,
+		desc: &quot;Storage and counter-space.&quot;
+	},
+	{
+		name: &quot;Motion-Activated Trashcan&quot;,
+		price: random(60, 300),
+		value: 200,
+		desc: &quot;Non-recyclable.&quot;
 	},
 	{
 		name: &quot;Hardwood Flooring&quot;,
@@ -212,26 +279,26 @@ $(document.head).find('#style-ui-bar').remove();</script><tw-passagedata pid="1"
 	},
 	{
 		name: &quot;Upgraded Fridge&quot;,
-		price: random(600, 8000),
+		price: random(1000, 8000),
 		value: 3000,
 		desc: &quot;Includes ice dispenser.&quot;
 	},
 	{
 		name: &quot;Upgraded Dishwasher&quot;,
-		price: random(300, 2500),
+		price: random(700, 2500),
 		value: 1600,
 		desc: &quot;Actually cleans.&quot;
 	},
 	{
 		name: &quot;Upgraded Oven&quot;,
-		price: random(600, 6000),
-		value: 3000,
+		price: random(1200, 4000),
+		value: 2500,
 		desc: &quot;Equivalent elements.&quot;
 	},
 	{
 		name: &quot;Upgrade Microwave&quot;,
-		price: random(100, 2000),
-		value: 800,
+		price: random(100, 1800),
+		value: 700,
 		desc: &quot;Big enough for popcorn.&quot;
 	}
 ]&gt;&gt;
@@ -243,16 +310,22 @@ $(document.head).find('#style-ui-bar').remove();</script><tw-passagedata pid="1"
 		desc: &quot;Irish spring green.&quot;
 	},
 	{
-		name: &quot;Bath mat&quot;,
-		price: random(20, 50),
-		value: 35,
-		desc: &quot;Ruh roh shaggy.&quot;
+		name: &quot;Paper Shower Curtain&quot;,
+		price: 1,
+		value: -500,
+		desc: &quot;Perfectly permeable.&quot;
 	},
 	{
-		name: &quot;Fancy Mirror&quot;,
-		price: random(400, 800),
-		value: 300,
-		desc: &quot;Fog free.&quot;
+		name: &quot;Shower Tiling&quot;,
+		price: random(700, 2000),
+		value: 1500,
+		desc: &quot;Moldless decoration.&quot;
+	},
+	{
+		name: &quot;Bath mat&quot;,
+		price: random(20, 60),
+		value: 35,
+		desc: &quot;Ruh roh shaggy.&quot;
 	},
 	{
 		name: &quot;New Vanity&quot;,
@@ -261,16 +334,28 @@ $(document.head).find('#style-ui-bar').remove();</script><tw-passagedata pid="1"
 		desc: &quot;Spacious.&quot;
 	},
 	{
+		name: &quot;Vanity Lighting&quot;,
+		price: random(100, 350),
+		value: 270,
+		desc: &quot;Bright. Very bright.&quot;
+	},
+	{
 		name: &quot;Medicine Cabinet&quot;,
-		price: random(80, 220),
+		price: random(80, 240),
 		value: 140,
 		desc: &quot;From Hawke&#39;s Bay.&quot;
 	},
 	{
-		name: &quot;Shower Tiling&quot;,
-		price: random(700, 2000),
-		value: 1500,
-		desc: &quot;Moldless decoration.&quot;
+		name: &quot;Fancy Mirror&quot;,
+		price: random(400, 800),
+		value: 500,
+		desc: &quot;Fog free.&quot;
+	},
+	{
+		name: &quot;Towel Bar&quot;,
+		price: random(50, 250),
+		value: 130,
+		desc: &quot;Storage, for towels!&quot;
 	}
 ]&gt;&gt;
 
@@ -290,12 +375,30 @@ $(document.head).find('#style-ui-bar').remove();</script><tw-passagedata pid="1"
 Your Score: _score &lt;br&gt;
 &lt;&lt;if _score &lt;= 0&gt;&gt;
 &lt;&lt;set _grade = &quot;F&quot;&gt;&gt;
-&lt;&lt;else&gt;&gt;
+&lt;&lt;set _flavour = &quot;Yikes.&quot;&gt;&gt;
+&lt;&lt;elseif _score &lt;= 500&gt;&gt;
+&lt;&lt;set _grade = &quot;E&quot;&gt;&gt;
+&lt;&lt;set _flavour = &quot;Better than nothing.&quot;&gt;&gt;
+&lt;&lt;elseif _score &lt;= 1000&gt;&gt;
 &lt;&lt;set _grade = &quot;D&quot;&gt;&gt;
+&lt;&lt;set _flavour = &quot;Not bad.&quot;&gt;&gt;
+&lt;&lt;elseif _score &lt;= 1500&gt;&gt;
+&lt;&lt;set _grade = &quot;C&quot;&gt;&gt;
+&lt;&lt;set _flavour = &quot;Good job.&quot;&gt;&gt;
+&lt;&lt;elseif _score &lt;= 2000&gt;&gt;
+&lt;&lt;set _grade = &quot;B&quot;&gt;&gt;
+&lt;&lt;set _flavour = &quot;Impressive!&quot;&gt;&gt;
+&lt;&lt;elseif _score &lt;= 2500&gt;&gt;
+&lt;&lt;set _grade = &quot;A&quot;&gt;&gt;
+&lt;&lt;set _flavour = &quot;Well done!&quot;&gt;&gt;
+&lt;&lt;else&gt;&gt;
+&lt;&lt;set _grade = &quot;S&quot;&gt;&gt;
+&lt;&lt;set _flavour = &quot;Bravo!&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 Your Grade: _grade &lt;br&gt;
+//_flavour// &lt;br&gt;
 &lt;&lt;link &quot;Play Again&quot;&gt;&gt;&lt;&lt;run Engine.restart()&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Room" tags="" position="200,201" size="100,100">&lt;&lt;type 15ms&gt;&gt;\
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Room" tags="" position="200,201" size="100,100">&lt;&lt;type 20ms&gt;&gt;\
 &lt;h2&gt;$rooms[$currentRoom]&lt;/h2&gt;\
 &lt;&lt;if $currentRoom == 0&gt;&gt;\
 $livingSel[0].name
